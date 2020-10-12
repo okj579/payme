@@ -1,0 +1,13 @@
+{
+    "paymentMethods": {
+        "BankEu": {
+            "title": "SEPA Bank Transfer"
+        },
+        "BankUs": {
+            "title": "US Bank Transfer"
+        },
+        "Paypal": {
+            "title": "Paypal"
+        }
+    }
+}

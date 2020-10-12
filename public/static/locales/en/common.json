@@ -1,0 +1,39 @@
+{
+    "options": {
+        "value": "Amount",
+        "currency": "Currency",
+        "reason": "Reference"
+    },
+    "paymentMethods": {
+        "BankEu": {
+            "title": "SEPA Bank Transfer",
+            "iban": "IBAN",
+            "bic": "BIC",
+            "accountHolder": "Account Holder",
+            "bankName": "Bank",
+            "qr": {
+                "alt": "QR Code",
+                "description": "Pay with Code"
+            }
+        },
+        "BankUs": {
+            "title": "US Bank Transfer",
+            "account_no": "Account Number",
+            "account_type": "Account Type",
+            "ach_routing_no": "Routing Number",
+            "wire_routing_no": "Wire Routing Number",
+            "bic": "BIC",
+            "accountHolder": "Account Holder",
+            "bankName": "Bank"
+        },
+        "Paypal": {
+            "title": "Paypal",
+            "id": "Paypal User"
+        }
+    },
+    "copy": {
+        "title": "Copy to clipboard",
+        "success": "Copied",
+        "error": "Could not access your clipboard"
+    }
+}

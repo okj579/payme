@@ -1,0 +1,24 @@
+[
+    {
+        "slug": "test",
+        "title": "Test",
+        "options": {},
+        "paymentMethods": [
+            {
+                "type": "BankEu",
+                "iban": "DE12345678901234",
+                "bic": "VOBADESS123",
+                "accountHolder": "Test Test"
+            },
+            {
+                "type": "BankUs",
+                "routing_no": "123456789",
+                "account_no": "123456789"
+            },
+            {
+                "type": "Paypal",
+                "id": "okj579@gmail.com"
+            }
+        ]
+    }
+]
