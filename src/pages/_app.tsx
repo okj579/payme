@@ -5,7 +5,7 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { useMediaQuery } from "@material-ui/core";
 import { siteTitle } from "../components/Layout";
-import i18n from '../i18n'
+import { appWithTranslation } from '../i18n'
 
 function MyApp(props) {
     const { Component, pageProps } = props;
@@ -51,4 +51,4 @@ MyApp.propTypes = {
     pageProps: PropTypes.object.isRequired,
 };
 
-export default i18n.appWithTranslation(MyApp);
+export default appWithTranslation(MyApp);

@@ -11,9 +11,8 @@ export interface GiroCodeProps {
     bic?: string;
     name: string;
     iban: string;
-    currency?: string;
-    amount: number;
-    reference?: string;
+    currency: string;
+    amount?: number;
     purposeCode?: string;
     structuredReference?: string;
     unstructuredReference?: string;
@@ -27,6 +26,7 @@ export default class GiroCode extends Component<GiroCodeProps> {
     render() {
         const { bgColor, fgColor, ...paymentData } = this.props;
 
+        const amount = typeof paymentData.amount === 'number' ? paymentData.amount.toFixed(2) : '';
         const epcValue = [
        		SERVICE_TAG,
        		VERSION,
@@ -35,7 +35,7 @@ export default class GiroCode extends Component<GiroCodeProps> {
             paymentData.bic,
             paymentData.name,
             electronicFormat(paymentData.iban),
-            paymentData.currency + paymentData.amount.toFixed(2),
+            paymentData.currency + amount,
             paymentData.purposeCode || '',
             paymentData.structuredReference || '',
             paymentData.unstructuredReference || '',

@@ -1,6 +1,4 @@
 // next.config.js
-const localeSubpaths = {}
-
 module.exports = {
   experimental: {
     async rewrites() {
@@ -11,8 +9,5 @@ module.exports = {
         }
       ]
     }
-  },
-  publicRuntimeConfig: {
-    localeSubpaths,
   },
 }

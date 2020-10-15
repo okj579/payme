@@ -1,8 +1,8 @@
 {
     "options": {
-        "value": "Amount",
+        "amount": "Amount",
         "currency": "Currency",
-        "reason": "Reference"
+        "purpose": "Reference"
     },
     "paymentMethods": {
         "BankEu": {
@@ -18,17 +18,38 @@
         },
         "BankUs": {
             "title": "US Bank Transfer",
-            "account_no": "Account Number",
-            "account_type": "Account Type",
-            "ach_routing_no": "Routing Number",
-            "wire_routing_no": "Wire Routing Number",
-            "bic": "BIC",
+            "accountNo": "Account Number",
+            "accountType": "Account Type",
+            "achRoutingNo": "Routing Number (ACH)",
+            "wireRoutingNo": "Wire Routing Number",
+            "bic": "SWIFT/BIC Code",
             "accountHolder": "Account Holder",
-            "bankName": "Bank"
+            "bankName": "Bank",
+            "accountTypes": {
+                "checking": "Checking",
+                "savings": "Savings",
+                "loan": "Loan",
+                "ledger": "General ledger"
+            }
         },
         "Paypal": {
             "title": "Paypal",
-            "id": "Paypal User"
+            "id": "Paypal User",
+            "buttonText": "Pay with Payal",
+            "qr": {
+                "alt": "QR Code",
+                "description": "Pay with Code"
+            }
+        },
+        "PaypalMe": {
+            "title": "Paypal.Me",
+            "id": "Paypal.Me Identifier",
+            "baseUrl": "Paypal.Me URL",
+            "buttonText": "Pay with Payal",
+            "qr": {
+                "alt": "QR Code",
+                "description": "Pay with Code"
+            }
         }
     },
     "copy": {

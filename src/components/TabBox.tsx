@@ -18,9 +18,13 @@ const styles = createStyles((theme) => ({
         minHeight: 224,
         '& $tabs': {
             borderRight: `1px solid ${theme.palette.divider}`,
+        },
+        '& $tabpanel': {
+            flex: 1,
         }
     },
-    tabs: {},
+    tabs: null,
+    tabpanel: null,
 }));
 
 interface TabBoxProps {
@@ -66,6 +70,7 @@ class TabBox extends Component<TabBoxProps & WithStyles, TabBoxState> {
                     ))}
                 </Tabs>
                 {children.map((tab, index) => (
+                    //@ts-ignore
                     <TabPanel key={index} value={value} index={index} {...tab.props} className={classes.tabpanel} />
                 ))}
             </div>

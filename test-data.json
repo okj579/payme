@@ -5,19 +5,32 @@
         "options": {},
         "paymentMethods": [
             {
+                "sort": 2,
                 "type": "BankEu",
                 "iban": "DE12345678901234",
                 "bic": "VOBADESS123",
-                "accountHolder": "Test Test"
+                "accountHolder": "Test Test",
+                "bankName": "Volksbank Stuttgart"
             },
             {
+                "sort": 1,
                 "type": "BankUs",
-                "routing_no": "123456789",
-                "account_no": "123456789"
+                "accountNo": "123456789",
+                "accountType": "checking",
+                "achRoutingNo": "123456789",
+                "wireRoutingNo": "123456789",
+                "accountHolder": "Test Test",
+                "bankName": "Citi Bank",
+                "bic": "CITIUSNY"
             },
             {
                 "type": "Paypal",
                 "id": "okj579@gmail.com"
+            },
+            {
+                "sort": 0,
+                "type": "PaypalMe",
+                "id": "okj579"
             }
         ]
     }
